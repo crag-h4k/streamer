@@ -2,9 +2,9 @@
 from random import random, randint
 from time import sleep
 def count(fn):
-	def _count(*largs, **kargs):
+	def _count(*args, **kargs):
 		_count.i += 1
-		fn(*largs,**kargs)
+		fn(*args,**kargs)
 	_count.i = 0
 	return _count
 
